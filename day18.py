@@ -8,7 +8,7 @@ from random import randint as rando
 number = rando(0,100)
 attempt = 0
 
-print("WELCOME TO THE NUMBER GUESSING GAME")
+print("\033[196;256mWELCOME TO THE NUMBER GUESSING GAME\033[0m")
 print("Guess the number I am thinking of from 0 - 100")
 print("I will tell you how close your at the guessung the right number")
 
