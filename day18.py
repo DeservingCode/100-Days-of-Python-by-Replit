@@ -20,7 +20,7 @@ while True:
         print("You figured it out! I knew you would! ")
         if attempt == 1:
             print("It only took you ONE try?!?!?! Play the lottery today!")
-        elif attempt < 10:
+        elif attempt < 5:
             print("It only took you", attempt, "tries? You're really good at this game!")
         else:
             print("It took you", attempt, "tries. Play again. I know you can do better!")
