@@ -1,1 +1,0 @@
-print("100 Days of Code #100DaysofCode by Replit")
