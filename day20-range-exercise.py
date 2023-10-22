@@ -2,6 +2,8 @@
 # #100daysofcode
 # Day 20 - Range System based on input
 
+import random
+
 while True:
 
     lower = int(input("What is the lower limit? "))
@@ -20,8 +22,7 @@ while True:
         else:
             print ("Starting from", lower, "and going to", upper, "with an interval of", interval)
             for i in range(lower, upper, interval):
-                print (i)
-
+                print(f"\033[{random.randrange(30,40)};{random.randrange(30,40)}m{i}\033[0m")
     choice = input("Counter Completed. Would you like to try again? ")
     if choice == 'y':
         continue
