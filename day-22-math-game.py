@@ -3,12 +3,19 @@
 #Day 22 - Math Game
 
 score = 0
+
+print("""
+WELCOME TO THE MATH GAME
+CHALLENGE YOURSELF ON YOUR MULTIPLICATION TABLE
+ARE YOU UP FOR IT?
+      """)
+      
 tableChoice = int(input("Choose a multiple for the game: "))
 
 print(f"You chose {tableChoice}! Ready? Set? GO!")
 
 for i in range(1,11,1):
-    answer = int(input(f"Round {i}: What is {tableChoice} * {i}:  "))
+    answer = int(input(f"Round {i}: What is {tableChoice} * {i}: "))
     if answer == tableChoice * i:
         print ("\033[32mCorrect!\033[0m")
         score += 1
