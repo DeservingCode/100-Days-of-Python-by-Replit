@@ -1,6 +1,6 @@
 #Jason Johnson
 # #replit100DaysofCode
-#Day 24 - Subroutines with arguments
+#Day 25 - Subroutines with returns
 #Challenge - Create a subroutine that allows a dice role for an unknow amount of sides 
 
 from random import randint as randroll
