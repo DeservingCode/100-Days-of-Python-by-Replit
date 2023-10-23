@@ -5,8 +5,22 @@
 
 from random import randint as randroll
 def diceRoll(sides):
-    result = randroll(1,sides)
-    return result
+    while True:
+        print(f"You rolled a {randroll(1,sides)}.")
+        userChoice = input("Would you like to Roll again? (y/n): ")
+        if userChoice == 'y':
+            sides = int(input("How many sides does the dice have? "))
+            print("restarting")
+            continue
+        elif userChoice == 'n':
+            print ("exiting game")
+            print("Thanks for Playing.")
+            break
+        else:
+            print("Unknown command. Exiting Game.")
+            exit()
+
+     
 
 
 ''' Test created as I was getting incorrect values. Originally had diceSides = int(input("How many sides does the dice have? "))+1 
@@ -25,19 +39,6 @@ print(count)
 '''
 print ("Wlecome to the Dice Roll Generator.")
 
-while True:
-    diceSides = int(input("How many sides does the dice have? ")) + 1
-    print()
-    roll = diceRoll(diceSides)
-    print(f"You rolled a {roll}.")
-    userChoice = input("Would you like to Roll again? (y/n): ")
-    if userChoice == 'y':
-        print("restarting")
-        continue
-    elif userChoice == 'n':
-        print ("exiting game")
-        print("Thanks for Playing.")
-        break
-    else:
-        print("Unknown command. Exiting Game.")
-        exit()
+diceSides = int(input("How many sides does the dice have? "))
+diceRoll(diceSides)
+
